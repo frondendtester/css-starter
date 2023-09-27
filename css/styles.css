@@ -1,3 +1,10 @@
+/* GLOBAL */
+:root	{
+--accent-color: ;
+--font-family: ;
+--font-text: ;
+}
+
 html	{
 	box-sizing: border-box;
 	height: 100%;
@@ -28,6 +35,12 @@ img	{
 	height: auto;
 }
 
+/* OUTLINE STYLE */
+*:focus	{
+	outline: 2px dashed var(--accent-color);
+	outline-offset: 3px;
+}
+
 
 /* CONTAINER */
 .container	{
@@ -39,7 +52,33 @@ img	{
 	margin-right: auto;
 }
 
-/* MAIN-CONTENT */
-.main-content	{
-	flex-grow: 1;
+.hero {
+}
+.hero-content {
+}
+
+.img-apple-icon {
+	width: 218.4px;
+	height: 259.401px;
+	flex-shrink: 0;
+}
+
+.img-apple-text {
+color: #000;
+text-align: center;
+font-family: "Roboto";
+font-size: 150px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+
+.img-apple-watch {
+	width: 888px;
+	height: 854px;
+	flex-shrink: 0;
+	background-image: url("../img/Apple\ Watch.png");
+	background-position: column;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
